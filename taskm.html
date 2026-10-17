@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task1</title>
+</head>
+
+<body>
+
+    <div>
+        <h1>Study Tour Form</h1>
+
+        <p>
+            Please fill out the form below to register for the study tour. Make sure to provide accurate information to
+            ensure a smooth registration process.
+        </p>
+
+    </div>
+
+
+    <form>
+        <div>
+            <label for="">
+                Full Name*:
+            </label>
+            <input type="text" id="" placeholder="John Doe" required><br>
+        </div>
+
+        <div>
+            <label for="">
+                Email Address*:
+            </label>
+            <input type="email" placeholder="" id="" required><br>
+        </div>
+
+        <div>
+            <label for="">
+                Student ID*:
+            </label>
+            <input type="number" minlength="14" maxlength="16" required><br>
+        </div>
+
+        <div>
+            <label for="">
+                T-shirt Size:
+            </label>
+            <!-- Radio -->
+            <div>
+                <input type="radio" name="size" value="S" id="sizeS">
+                <label for="sizeS">Small</label>
+
+                <input type="radio" name="size" value="M" id="sizeM">
+                <label for="sizeM">Medium</label>
+
+                <input type="radio" name="size" value="L" id="sizeL">
+                <label for="sizeL">Large</label>
+
+                <input type="radio" name="size" value="XL" id="sizeXL">
+                <label for="sizeXL">Extra Large</label>
+            </div>
+
+            <div>
+                <label for="">
+                    Date of Birth*:
+                </label>
+                <input type="date" id="" required><br>
+            </div>
+
+
+            <div>
+                <label for="">
+                    Gender:
+                </label>
+
+                <div>
+                    <input type="radio" name="size" value="S" id="sizeS">
+                    <label for="sizeS">Male</label>
+
+                    <input type="radio" name="size" value="M" id="sizeM">
+                    <label for="sizeM">Female</label>
+                </div>
+
+            </div>
+
+            <div>
+                <label for="">
+                    Favorite Minigame:
+                </label>
+
+                <div>
+                    <input type="checkbox" name="size" value="S" id="sizeS">
+                    <label for="sizeS">A</label>
+
+                    <input type="checkbox" name="size" value="M" id="sizeM">
+                    <label for="sizeM">B</label>
+                </div>
+
+            </div>
+
+            <div>
+                <label for="">
+                    Transportation Preference:
+                </label>
+
+                <select name="" id="">
+                    <option value="">Bus</option>
+                    <option value="">Train</option>
+                    <option value="">Car</option>
+                </select>
+
+            </div>
+
+
+
+            <label for="profPic" style="display: flex; flex-direction: column; align-items: center; justify-content: center; border: 1px
+                dashed black; width: 200px; height: 200px;">
+                <p> Upload your image</p>
+            </label>
+            <input type="file" accept="image/png" id="profPic" hidden />
+
+            <div>
+                <label for="">
+                    Special Request
+                </label>
+
+                <textarea name="" id="" cols="20" rows="10"></textarea>
+
+            </div>
+
+
+
+
+            <input type="submit" value="submit">
+
+    </form>
+
+
+
+    </form>
+</body>
+
+</html>

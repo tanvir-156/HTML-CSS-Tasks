@@ -1,0 +1,20 @@
+body{
+    background-image: linear-gradient(to right,#11998e,#38ef7d);
+    height: 500px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    text-align: center;
+}
+i{
+    position: relative;
+    font-size: 100px;
+    color: antiquewhite;
+    text-align: center;
+}
+.badge{
+    position: absolute;
+    font-size: 50px;
+    color: red;
+
+}

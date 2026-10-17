@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box Again</title>
+</head>
+
+<style>
+    *{
+        margin:0;
+        padding:0;
+    }
+
+    body{
+        background: url("bg.avif");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        /* width: 100%; */
+        background-origin: border-box;
+        background-position: right;
+        font-family: Roboto;
+    }
+
+    
+
+    h1{
+        color: green;
+
+    }
+
+    .navbar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+
+        /* for mobile */
+
+        
+
+    }
+    
+
+    .navbar ul{
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+        font-size: large;
+        list-style: none;
+        /* for mobile */
+
+    }
+    li a{
+        color: black;
+        /* background-color: brown; */
+        padding: 5px 10px;
+        /* border-radius: 5px;         */
+        text-decoration: none;
+        }
+
+        .ok{
+        display:none;
+    }
+
+   
+    @media(max-width:600px){
+        .navbar{
+            flex-direction: row;
+        }
+
+        #menuBtn:checked + .navbar ul{
+        display:none
+    }
+
+        .navbar ul{
+            flex-direction: column;
+            margin-top: 20px;
+            background-color: rgba(255, 255, 255, 0.3);
+            width: 100%;
+            align-items: center;
+            position: fixed;
+            top: 80px;
+
+        }
+
+        .ok{
+        display:block;
+    }
+        .ok svg{
+        width: 50px;
+        height: 100px;
+
+    }
+
+    }
+
+    
+
+</style>
+<body>
+   
+    <input type="checkbox" accept="ul" checked id="menuBtn" hidden>
+
+    <nav class="navbar">
+        <h1>.Logo</h1>
+
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+     <label for="menuBtn" class="ok"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5" />
+</svg>
+</label>
+
+    </nav>
+
+</body>
+</html>

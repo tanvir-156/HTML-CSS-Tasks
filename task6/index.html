@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Another Profile Card</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+
+        }
+
+        body {
+            background-color: rgb(234, 223, 244);
+            display: flex;
+            justify-content: center;
+        }
+
+
+        .shoe {
+            width: 370px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 25px;
+            font-family: roboto;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            position: relative;
+
+
+        }
+        .p1{
+            color: green;
+        }
+
+        .top{
+
+            width: 370px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            position: absolute;
+            top: 30px;
+            gap: 200px;
+        }
+        .top p{
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 5px;
+            border-radius: 60px;
+            border: solid rgb(0, 0, 0, 0.02);
+            box-shadow: 0 0 1.2px;
+        }
+        .btn {
+            height: 45px;
+            width: 360px;
+            border-radius: 25px;
+            background-color: rgb(17, 17, 18);
+            color: white;
+            font-size: 16px;
+            margin-top: 7px;
+        }
+
+        @media(max-width: 425px){
+            .shoe{
+                width: 310px;
+            }
+            .top{
+                width: 310px;
+                gap:130px
+            }
+            .btn{
+                width: 300px;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="shoe">
+        <div class="top">
+            <p>Best Seller</p>
+            <p>❤️</p>
+        </div>
+        <img src="shoe.png" alt="image" style=" border-radius: 15px;">
+
+        <p class="p1">Nike</p>
+        <h3>Dunk High "Green Satin" Sneakers</h3>
+        <p style="font-size: large;">$180.00</p>
+        
+        <button class="btn">Buy Now</button>
+
+    </div>
+</body>
+
+</html>

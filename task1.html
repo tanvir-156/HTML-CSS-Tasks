@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Tour Form</title>
+</head>
+<body>
+    <div>
+        <h2>Study Tour Form</h2>
+
+        <p>
+            Please fill out the form below
+        </p>
+    </div>
+
+    <form>
+        <div>
+            <label for="">
+                Full Name*:
+            </label>
+            <input type="text" id="" placeholder="Nayef" required><br>
+        </div>
+
+        <div>
+            <label for="">
+                Email Address*:
+            </label>
+            <input type="email" id="" placeholder="Nayef@gmail.com" required><br>
+        </div>
+
+        <div>
+            <label for="">
+                Who is the current VC of NEUB:
+            </label>
+            <input type="text" pattern="\+8801[3-9][0-9]{8}" required><br>
+        </div>
+
+        <div>
+            <label for="">
+                T-shirt Size:
+            </label>
+            <!--Radio-->
+            <input type="radio" name="size" value="S" id="sizeS">
+            <label for="sizeS">Small</label>
+
+            <input type="radio" name="size" value="M" id="sizeM">
+            <label for="sizeM">Medium</label>
+            
+            <input type="radio" name="size" value="L" id="sizeL">
+            <label for="sizeL">Large</label>
+
+            <input type="radio" name="size" value="XL" id="sizeXL">
+            <label for="sizeXL">Extra Large</label>
+        </div>
+
+        <div>
+            <label for="">
+                Date of Birt:
+            </label>
+            <input type="date" id="" required><br>
+        </div>
+
+        <div>
+            <label for="">
+                Gender:
+            </label>
+
+            <div>
+                <input type="radio" name="size" value="S" id="sizeS">
+                <label for="sizeS">Male</label>
+
+                <input type="radio" name="size" value="M" id="sizeM">
+                <label for="sizeM">Female</label>
+            </div>
+
+            <div>
+                <label for="">
+                    Favourite Minigame:
+                </label>
+
+                <div>
+                    <input type="checkbox" name="size" value="S" id="sizeS">
+                    <label for="sizeS">Truth or Dare</label>
+
+                    <input type="checkbox" name="size" value="M" id="sizeM">
+                    <label for="sizeM">Basketball</label>
+
+                    <input type="checkbox" name="size" value="L" id="sizeL">
+                    <label for="sizeL">Simon Says</label>
+                </div>
+
+            </div>
+
+            <div>
+                <label for="">
+                    Tranportation Options:
+                </label>
+                <select name="" id="">
+                    <option value="">Bus</option>
+                    <option value="">Truck</option>
+                    <option value="">Train</option>
+                    <option value="">Aeroplane</option>
+                </select>
+
+            </div>
+            
+            <div>
+            <label for="profilepic" style="display: flex; flex-direction: column; align-items: center; justify-content: center; border: 1px dashed black; width: 200px; height: 200px;">
+                <p>Upload your image</p>
+            </label>
+            
+            <input type="file" accept="image/png" id="profilepic" hidden />
+            </div>
+            
+            <div>
+                <label for="">
+                    Special Request
+                </label>
+
+                <textarea name="" id="" cols="10" rows="5"></textarea>
+            </div>
+
+            <input type="submit" value="submit">
+            
+    </form>
+</body>
+</html>
